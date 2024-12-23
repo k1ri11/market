@@ -1,0 +1,183 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34 41 52);
+}
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  margin: 72px auto 24px;
+  width: 1297px;
+  max-width: 85%;
+
+  @include tn {
+    position: relative;
+    margin: 50px auto 24px;
+  }
+}
+
+.footerLinksWrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  width: 96.53%;
+
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.contactColumn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  margin: 0 0 71px;
+  width: 252px;
+  min-width: 0;
+
+  @include md {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.supportIcon {
+  width: 96px;
+  max-width: 85%;
+  object-fit: cover;
+}
+
+.supportText {
+  margin: 24px 0 0;
+  min-width: 0;
+  font: 400 14px/1.5 Inter, Helvetica, Arial, serif;
+  color: rgb(202 208 217);
+}
+
+.companyColumn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  margin: 0 0 30px;
+  min-width: 0;
+
+  @include md {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.companyTitle {
+  margin: 0 30px 0 0;
+  font: 600 16px/1.5 Inter, Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+
+  @include xs {
+    position: relative;
+    margin: 0 16px 0 0;
+  }
+
+  @include tn {
+    margin: 0 8px 0 0;
+  }
+}
+
+.info26 {
+  margin: 16px 0 0;
+  font: 400 14px/1.57 Inter, Helvetica, Arial, serif;
+  color: rgb(224 229 235);
+}
+
+.info261 {
+  margin: 8px 0 0;
+  font: 400 14px/1.57 Inter, Helvetica, Arial, serif;
+  color: rgb(224 229 235);
+}
+
+.info262 {
+  margin: 8px 33px 0 0;
+  font: 400 14px/1.57 Inter, Helvetica, Arial, serif;
+  color: rgb(224 229 235);
+
+  @include md {
+    position: relative;
+    margin: 8px 32px 0 0;
+  }
+
+  @include xs {
+    margin: 8px 16px 0 0;
+  }
+
+  @include tn {
+    margin: 8px 8px 0 0;
+  }
+}
+
+.divider {
+  margin: 72px 0 0;
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  background-color: rgb(51 61 76);
+  border-radius: 1px;
+
+  @include tn {
+    position: relative;
+    margin: 50px 0 0;
+  }
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  margin: 23px 1px 0 0;
+
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.copyrightBox {
+  width: 100%;
+  text-align: center;
+  font: 400 12px/1.5 Inter, Helvetica, Arial, serif;
+  color: rgb(0 0 0);
+}
+
+.copyrightBox_box {
+  width: 100%;
+  text-align: center;
+  margin: 9px 0 13px;
+  min-width: 0;
+
+  @include sm {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.copyrightBox_span0 {
+  font: 1em/1.5 Inter, Helvetica, Arial, serif;
+  color: rgb(202 208 217);
+}
+
+.copyrightBox_span1 {
+  font: 1em/1.5 Inter, Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+}

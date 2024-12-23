@@ -1,0 +1,131 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.content_box2 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255 255 255);
+  border-radius: 8px;
+}
+
+.unnamed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+  margin: 24px 0 0;
+}
+
+.unnamed1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 84.31%;
+}
+
+.content_box1 {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 20px;
+  background-color: rgb(240 61 61);
+  border-radius: 4px;
+}
+
+.info13 {
+  margin: 2px 1px 2px 8px;
+  font: 500 12px/1.33 Inter, Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.content_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(255 255 255);
+}
+
+.unnamed2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  margin: 0 16px 16px;
+}
+
+.unnamed3 {
+  display: flex;
+  column-gap: 8px;
+}
+
+.image20 {
+  margin: 3px 0;
+  width: 76px;
+  min-width: 0;
+}
+
+.reviewCount {
+  min-width: 0;
+  font: 400 12px/1.5 Inter, Helvetica, Arial, serif;
+  color: rgb(156 163 175);
+}
+
+.name {
+  margin: 8px 0 0;
+  font: 500 14px/1.42 Inter, Helvetica, Arial, serif;
+  color: rgb(24 29 37);
+}
+
+.unnamed4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  margin: 12px 0 0;
+}
+
+.sellPrice {
+  min-width: 0;
+  font: 600 20px/1.4 Inter, Helvetica, Arial, serif;
+  color: rgb(24 29 37);
+}
+
+.basePrice {
+  min-width: 0;
+  font: 400 14px/1.5 Inter, Helvetica, Arial, serif;
+  color: rgb(156 163 175);
+}
+
+.cartBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EEF1F6;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cartBg.active {
+  background: rgb(51, 61, 76);
+}
+
+.cartImg {
+  width: 24px;
+  height: 24px;
+  transition: fill 0.2s ease-in-out;
+}
+
+.cartImg.active {
+  filter: brightness(0) invert(1);
+}
+

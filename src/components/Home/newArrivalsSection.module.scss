@@ -1,0 +1,158 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.newArrivalsSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.showcaseContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin: 72px auto 0;
+  width: 1296px;
+  max-width: 85%;
+
+  @include tn {
+    position: relative;
+    margin: 50px auto 0;
+  }
+}
+
+.sectionTitle {
+  font: 600 28px/1.28 Inter, Helvetica, Arial, serif;
+  color: rgb(24 29 37);
+
+  @include md {
+    align-items: flex-start;
+    font-size: 26px;
+  }
+
+  @include xxs {
+    font-size: 22px;
+  }
+}
+
+.productDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  @include xxl {
+    flex-flow: column nowrap;
+    gap: 30px 10px;
+  }
+}
+
+.mainProductImg {
+  width: 416px;
+  min-width: 0;
+  border-radius: 16px;
+  object-fit: cover;
+
+  @include xxl {
+    position: relative;
+    width: 100%;
+    min-width: unset;
+    max-width: 416px;
+  }
+}
+
+.productGrid {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  width: 840px;
+  min-width: 0;
+
+  @include xxl {
+    position: relative;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.productRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  @include lg {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+
+.productCard {
+  width: 400px;
+
+  @include lg {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.productCard1 {
+  width: 400px;
+  min-width: 0;
+
+  @include lg {
+    position: relative;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.productRow1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  @include lg {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  @include sm {
+    gap: 30px 10px;
+  }
+}
+
+.productCard2 {
+  width: 400px;
+  min-width: 0;
+
+  @include lg {
+    position: relative;
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+  }
+
+  @include sm {
+    min-width: unset;
+  }
+}
+
+.productRow2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  @include lg {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include sm {
+    gap: 30px 10px;
+  }
+}
